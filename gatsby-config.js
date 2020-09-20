@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `whats up clone`,
-    description: `whats up clone`,
+    title: `whatsApp clone`,
+    description: `whatsApp clone`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
