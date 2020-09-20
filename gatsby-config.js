@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `project setup config`,
-    description: `template for my new projects`,
+    title: `whats up clone`,
+    description: `whats up clone`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
