@@ -14,18 +14,20 @@ type Props = {
 };
 
 const Layout = ({ children, classes }: Props) => (
-  <Paper elevation={5} className={classes.container}>
-    <Sidebar />
-    <Scrollbars
-      universal
-      autoHeight
-      autoHeightMax="100vh"
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}>
-      <Grid>{children}</Grid>
-    </Scrollbars>
-  </Paper>
+  <div className={classes.app}>
+    <Paper elevation={5} className={classes.container}>
+      <Sidebar />
+      <Scrollbars
+        universal
+        autoHeight
+        autoHeightMax="100vh"
+        autoHide
+        autoHideTimeout={1000}
+        autoHideDuration={200}>
+        <Grid>{children}</Grid>
+      </Scrollbars>
+    </Paper>
+  </div>
 );
 
 export default withStyles(styles)(Layout);
