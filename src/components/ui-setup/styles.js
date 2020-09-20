@@ -2,14 +2,14 @@
 const styles = ({ palette }) => ({
   '@global': {
     // here i can put global styles like scroll behavor smooth
-    // html: {
-    //   margin: 0,
-    // },
-    body: {
-      backgroundColor: palette.common.white,
+    html: {
+      margin: 0,
     },
-    svg: {
-      display: 'block',
+    body: {
+      height: '100vh',
+      display: 'grid',
+      placeItems: 'center',
+      backgroundColor: palette.background.main,
     },
   },
 });

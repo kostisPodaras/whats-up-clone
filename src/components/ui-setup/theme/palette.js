@@ -17,7 +17,8 @@ const palette = {
     contrastText: '#fff',
   },
   background: {
-    lightGray: '#F8F8F8',
+    lightGray: '#ededed',
+    main: '#DADBD3',
   },
 };
 
