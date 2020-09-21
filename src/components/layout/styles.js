@@ -9,6 +9,7 @@ const styles = ({ palette }) => ({
     backgroundColor: palette.background.lightGray,
     height: '90vh',
     width: '90vw',
+    display: 'flex',
   },
 });
 
