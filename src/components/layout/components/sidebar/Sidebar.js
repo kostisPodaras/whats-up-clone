@@ -14,6 +14,15 @@ const Sidebar = ({ classes }: Props) => {
       <p>Sidebar</p>
       <p>Sidebar</p>
       <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
+      <p>Sidebar</p>
     </div>
   );
 };
