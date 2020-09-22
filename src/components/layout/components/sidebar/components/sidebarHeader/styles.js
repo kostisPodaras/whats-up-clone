@@ -1,8 +1,4 @@
 const styles = ({ breakpoints }) => ({
-  container: {
-    border: '1px solid',
-    width: '35%',
-  },
   sidebarHeader: {
     padding: 10,
     flexDirection: 'column',

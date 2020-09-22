@@ -13,29 +13,25 @@ type Props = {
   classes: Object,
 };
 
-const SidebarHeader = ({ classes }: Props) => {
-  return (
-    <div className={classes.container}>
-      <Grid
-        container
-        justify="space-between"
-        alignItems="center"
-        className={classes.sidebarHeader}>
-        <Avatar />
-        <div className={classes.sidebarIcons}>
-          <IconButton classes={{ root: classes.icon }}>
-            <DonutLargeIcon />
-          </IconButton>
-          <IconButton classes={{ root: classes.icon }}>
-            <ChatIcon />
-          </IconButton>
-          <IconButton classes={{ root: classes.icon }}>
-            <MoreVertIcon />
-          </IconButton>
-        </div>
-      </Grid>
+const SidebarHeader = ({ classes }: Props) => (
+  <Grid
+    container
+    justify="space-between"
+    alignItems="center"
+    className={classes.sidebarHeader}>
+    <Avatar />
+    <div className={classes.sidebarIcons}>
+      <IconButton classes={{ root: classes.icon }}>
+        <DonutLargeIcon />
+      </IconButton>
+      <IconButton classes={{ root: classes.icon }}>
+        <ChatIcon />
+      </IconButton>
+      <IconButton classes={{ root: classes.icon }}>
+        <MoreVertIcon />
+      </IconButton>
     </div>
-  );
-};
+  </Grid>
+);
 
 export default withStyles(styles)(SidebarHeader);
