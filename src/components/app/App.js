@@ -8,11 +8,7 @@ type Props = {
 };
 
 const App = ({ classes }: Props) => {
-  return (
-    <div className={classes.container}>
-      <p>App</p>
-    </div>
-  );
+  return <div className={classes.container}>{/* <p>App</p> */}</div>;
 };
 
 export default withStyles(styles)(App);

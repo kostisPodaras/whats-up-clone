@@ -23,7 +23,7 @@ const SidebarInput = ({ classes, width }: Props) => {
           classes={{ root: classes.textfieldInput }}
           label="Select or start new chat..."
           fullWidth
-          // InputProps={{ disableUnderline: true }}
+          InputProps={{ disableUnderline: true }}
         />
       </div>
     </div>
