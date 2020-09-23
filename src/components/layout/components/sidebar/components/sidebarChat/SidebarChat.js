@@ -1,4 +1,5 @@
 import React from 'react';
+import { Scrollbars } from 'react-custom-scrollbars';
 import Grid from '@material-ui/core/Grid';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -10,21 +11,28 @@ type Props = {
 
 const SidebarChat = ({ classes }: Props) => (
   <Grid className={classes.container}>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
-    <h1>sidebar</h1>
+    <Scrollbars
+      universal
+      autoHeightMax="100vh"
+      autoHide
+      autoHideTimeout={1000}
+      autoHideDuration={200}>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+      <h1>sidebar</h1>
+    </Scrollbars>
   </Grid>
 );
 

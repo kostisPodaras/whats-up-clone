@@ -18,7 +18,6 @@ const Layout = ({ children, classes }: Props) => (
       <Sidebar />
       <Scrollbars
         universal
-        // autoHeight
         autoHeightMax="100vh"
         autoHide
         autoHideTimeout={1000}
