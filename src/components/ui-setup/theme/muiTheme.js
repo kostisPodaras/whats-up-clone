@@ -5,9 +5,13 @@ import typography from './typography';
 
 const theme = (mode) => {
   const muiTheme = createMuiTheme({
+    MuiWithWidth: {
+      initialWidth: 'lg', // Breakpoint being globally set 🌎!
+    },
+
     breakpoints: {
       keys: ['xs', 'sm', 'md', 'lg', 'xl'],
-      values: { xs: 360, sm: 768, md: 960, lg: 1280, xl: 1920 },
+      values: { xs: 320, sm: 768, md: 960, lg: 1280, xl: 1920 },
     },
     palette: { ...palette, type: mode },
     typography: { ...typography },

@@ -18,7 +18,7 @@ const SidebarHeader = ({ classes }: Props) => (
     container
     justify="space-between"
     alignItems="center"
-    className={classes.sidebarHeader}>
+    className={classes.container}>
     <Avatar />
     <div className={classes.sidebarIcons}>
       <IconButton classes={{ root: classes.icon }}>

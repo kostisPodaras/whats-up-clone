@@ -1,7 +1,8 @@
-const styles = ({ breakpoints }) => ({
-  sidebarHeader: {
+const styles = ({ breakpoints, palette }) => ({
+  container: {
     padding: 10,
     flexDirection: 'column',
+    borderRight: `1px solid ${palette.background.gray}`,
 
     [breakpoints.up('sm')]: {
       flexDirection: 'row',

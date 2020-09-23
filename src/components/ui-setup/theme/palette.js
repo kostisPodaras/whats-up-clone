@@ -18,6 +18,7 @@ const palette = {
   },
   background: {
     lightGray: '#ededed',
+    gray: 'lightgray',
     main: '#DADBD3',
   },
 };
