@@ -3,6 +3,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Grid from '@material-ui/core/Grid';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+import ChatRoom from './components/ChatRoom';
 import styles from './styles';
 
 type Props = {
@@ -17,21 +18,7 @@ const SidebarChat = ({ classes }: Props) => (
       autoHide
       autoHideTimeout={1000}
       autoHideDuration={200}>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
-      <h1>sidebar</h1>
+      <ChatRoom />
     </Scrollbars>
   </Grid>
 );
