@@ -10,8 +10,17 @@ type Props = {
 const App = ({ classes }: Props) => {
   return (
     <div className={classes.container}>
-      <h1> appappappappappapp appappappappappap appappappappappappp</h1>
-      <p>wdadwa</p>
+      <div>
+        <p>Header</p>
+      </div>
+
+      <div>
+        <p>chat body</p>
+      </div>
+
+      <div>
+        <p>footer</p>
+      </div>
     </div>
   );
 };
