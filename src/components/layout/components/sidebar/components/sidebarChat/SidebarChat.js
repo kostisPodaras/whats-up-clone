@@ -18,6 +18,13 @@ const SidebarChat = ({ classes }: Props) => (
       autoHide
       autoHideTimeout={1000}
       autoHideDuration={200}>
+      <ChatRoom addNewChat />
+      <ChatRoom />
+      <ChatRoom />
+      <ChatRoom />
+      <ChatRoom />
+      <ChatRoom />
+      <ChatRoom />
       <ChatRoom />
     </Scrollbars>
   </Grid>

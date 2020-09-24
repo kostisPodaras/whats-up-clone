@@ -2,7 +2,7 @@ const styles = ({ breakpoints, palette }) => ({
   container: {
     padding: 10,
     flexDirection: 'column',
-    borderRight: `1px solid ${palette.background.gray}`,
+    borderRight: `1px solid ${palette.borders.dark}`,
 
     [breakpoints.up('sm')]: {
       flexDirection: 'row',
