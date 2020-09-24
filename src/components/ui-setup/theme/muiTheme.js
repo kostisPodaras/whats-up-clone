@@ -18,6 +18,7 @@ const theme = (mode) => {
     // or typography
     app: {
       maxWidth: '90vw',
+      maxHeight: '90vh',
       minWidth: 320,
       sideBarWidth: '35vw',
       chatRoomWidth: '75vw',

@@ -10,7 +10,7 @@ type Props = {
 const App = ({ classes }: Props) => {
   return (
     <div className={classes.container}>
-      <h1>appappappappappapp</h1>
+      <h1> appappappappappapp appappappappappap appappappappappappp</h1>
       <p>wdadwa</p>
     </div>
   );

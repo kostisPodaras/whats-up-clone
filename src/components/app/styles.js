@@ -1,7 +1,5 @@
 const styles = () => ({
-  container: {
-    background: 'red',
-  },
+  container: {},
 });
 
 export default styles;

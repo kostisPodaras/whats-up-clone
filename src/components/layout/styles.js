@@ -1,5 +1,5 @@
 const styles = ({ palette, app }) => ({
-  app: {
+  project: {
     height: '100vh',
     display: 'grid',
     placeItems: 'center',
@@ -7,9 +7,17 @@ const styles = ({ palette, app }) => ({
   },
   container: {
     backgroundColor: palette.background.lightGray,
-    height: '90vh',
+    height: app.maxHeight,
     width: app.maxWidth,
     display: 'flex',
+  },
+  app: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    // overflow: 'scroll',
+    height: '100%',
+    // background: 'red',
   },
 });
 

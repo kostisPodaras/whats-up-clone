@@ -1,6 +1,4 @@
 import React from 'react';
-import { Scrollbars } from 'react-custom-scrollbars';
-// import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -13,17 +11,10 @@ type Props = {
 };
 
 const Layout = ({ children, classes }: Props) => (
-  <div className={classes.app}>
+  <div className={classes.project}>
     <Paper elevation={5} className={classes.container}>
       <Sidebar />
-      <Scrollbars
-        universal
-        autoHeightMax="100vh"
-        autoHide
-        autoHideTimeout={1000}
-        autoHideDuration={200}>
-        <div className={classes.chat}>{children}</div>
-      </Scrollbars>
+      <div className={classes.app}>{children}</div>
     </Paper>
   </div>
 );
