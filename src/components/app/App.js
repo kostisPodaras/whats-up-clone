@@ -1,6 +1,7 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+import { Chat } from './components';
 import styles from './styles';
 
 type Props = {
@@ -10,17 +11,7 @@ type Props = {
 const App = ({ classes }: Props) => {
   return (
     <div className={classes.container}>
-      <div>
-        <p>Header</p>
-      </div>
-
-      <div>
-        <p>chat body</p>
-      </div>
-
-      <div>
-        <p>footer</p>
-      </div>
+      <Chat />
     </div>
   );
 };

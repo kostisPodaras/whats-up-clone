@@ -1,5 +1,7 @@
 const styles = ({ breakpoints, palette }) => ({
   container: {
+    minHeight: 68,
+    maxHeight: 102,
     padding: 10,
     flexDirection: 'column',
     borderRight: `1px solid ${palette.borders.dark}`,
