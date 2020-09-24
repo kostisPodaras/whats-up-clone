@@ -1,6 +1,6 @@
 const styles = () => ({
   container: {
-    // border: '1px solid red',
+    background: 'red',
   },
 });
 

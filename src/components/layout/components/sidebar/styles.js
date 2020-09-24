@@ -1,6 +1,6 @@
-const styles = () => ({
+const styles = ({ app }) => ({
   container: {
-    width: '35%',
+    width: app.sideBarWidth,
     display: 'flex',
     flexDirection: 'column',
   },

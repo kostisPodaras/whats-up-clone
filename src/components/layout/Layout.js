@@ -1,6 +1,6 @@
 import React from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -22,7 +22,7 @@ const Layout = ({ children, classes }: Props) => (
         autoHide
         autoHideTimeout={1000}
         autoHideDuration={200}>
-        <Grid>{children}</Grid>
+        <div className={classes.chat}>{children}</div>
       </Scrollbars>
     </Paper>
   </div>

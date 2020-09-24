@@ -1,4 +1,4 @@
-const styles = ({ palette }) => ({
+const styles = ({ palette, app }) => ({
   app: {
     height: '100vh',
     display: 'grid',
@@ -8,7 +8,7 @@ const styles = ({ palette }) => ({
   container: {
     backgroundColor: palette.background.lightGray,
     height: '90vh',
-    width: '90vw',
+    width: app.maxWidth,
     display: 'flex',
   },
 });
