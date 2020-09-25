@@ -23,7 +23,7 @@ const styles = ({ palette, breakpoints }) => ({
   icon: {
     padding: '3px 15px 3px 7px',
 
-    [breakpoints.up('sm')]: {
+    [breakpoints.up('md')]: {
       padding: 12,
     },
   },

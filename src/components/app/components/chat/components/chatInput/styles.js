@@ -12,7 +12,7 @@ const styles = ({ palette, breakpoints }) => ({
     fontSize: 12,
     backgroundColor: palette.common.white,
 
-    [breakpoints.up('sm')]: {
+    [breakpoints.up('md')]: {
       width: '88%',
     },
   },

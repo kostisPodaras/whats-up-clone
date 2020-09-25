@@ -6,7 +6,7 @@ const styles = ({ breakpoints, palette }) => ({
     flexDirection: 'column',
     borderRight: `1px solid ${palette.borders.dark}`,
 
-    [breakpoints.up('sm')]: {
+    [breakpoints.up('md')]: {
       flexDirection: 'row',
     },
   },
@@ -16,7 +16,7 @@ const styles = ({ breakpoints, palette }) => ({
     justifyContent: 'space-between',
     marginTop: 12,
 
-    [breakpoints.up('sm')]: {
+    [breakpoints.up('md')]: {
       marginTop: 0,
     },
   },

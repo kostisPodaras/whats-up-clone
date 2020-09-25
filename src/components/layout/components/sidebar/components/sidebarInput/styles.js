@@ -3,7 +3,7 @@ const styles = ({ palette, breakpoints }) => ({
     padding: 5,
     backgroundColor: '#f6f6f6',
 
-    [breakpoints.up('sm')]: {
+    [breakpoints.up('md')]: {
       padding: 10,
     },
   },
@@ -12,7 +12,7 @@ const styles = ({ palette, breakpoints }) => ({
     '& .MuiInputBase-input': {
       height: '3.4em',
 
-      [breakpoints.up('sm')]: {
+      [breakpoints.up('md')]: {
         height: '2.4em',
       },
 
