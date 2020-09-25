@@ -3,6 +3,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Grid from '@material-ui/core/Grid';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+import Message from './components';
 import styles from './styles';
 
 type Props = {
@@ -17,26 +18,7 @@ const ChatBody = ({ classes }: Props) => (
       autoHide
       autoHideTimeout={1000}
       autoHideDuration={200}>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
-      <h1>body</h1>
+      <Message />
     </Scrollbars>
   </Grid>
 );
