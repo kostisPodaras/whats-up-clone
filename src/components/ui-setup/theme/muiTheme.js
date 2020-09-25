@@ -11,11 +11,11 @@ const theme = (mode) => {
 
     breakpoints: {
       keys: ['xs', 'sm', 'md', 'lg', 'xl'],
-      values: { xs: 320, sm: 768, md: 960, lg: 1280, xl: 1920 },
+      values: { xs: 320, sm: 768, md: 450, xmd: 960, lg: 1280, xl: 1920 },
     },
     palette: { ...palette, type: mode },
     typography: { ...typography },
-    // or typography
+    // typography,
     app: {
       maxWidth: '90vw',
       maxHeight: '90vh',

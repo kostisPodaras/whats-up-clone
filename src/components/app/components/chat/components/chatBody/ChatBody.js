@@ -19,6 +19,7 @@ const ChatBody = ({ classes }: Props) => (
       autoHideTimeout={1000}
       autoHideDuration={200}>
       <Message />
+      <Message />
     </Scrollbars>
   </Grid>
 );

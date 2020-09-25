@@ -16,7 +16,7 @@ const styles = ({ palette, breakpoints }) => ({
         height: '2.4em',
       },
 
-      [breakpoints.up('md')]: {
+      [breakpoints.up('xmd')]: {
         height: '1.4em',
       },
     },
