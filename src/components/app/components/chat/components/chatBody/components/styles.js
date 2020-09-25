@@ -18,9 +18,10 @@ const styles = ({ palette }) => ({
   },
   message: {
     color: palette.text.dark,
-    overflowWrap: 'breakWord',
-    wordWrap: 'breakWord',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
     hyphens: 'auto',
+    fontSize: 13,
   },
   timestamp: {
     marginLeft: 10,

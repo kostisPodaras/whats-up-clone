@@ -10,7 +10,7 @@ const theme = (mode) => {
     },
 
     breakpoints: {
-      keys: ['xs', 'sm', 'md', 'lg', 'xl'],
+      keys: ['xs', 'sm', 'md', 'xmd', 'lg', 'xl'],
       values: { xs: 320, sm: 450, md: 768, xmd: 960, lg: 1280, xl: 1920 },
     },
     palette: { ...palette, type: mode },
