@@ -15,7 +15,7 @@ const ChatInput = ({ classes }: Props) => (
   <Grid
     container
     alignItems="center"
-    justify="space-around"
+    justify="space-between"
     className={classes.container}>
     <InsertEmoticonIcon />
     <InputBase
