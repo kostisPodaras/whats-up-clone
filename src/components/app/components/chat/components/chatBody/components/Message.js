@@ -12,15 +12,20 @@ type Props = {
 };
 
 const Message = ({ classes, reciever }: Props) => (
-  <Grid className={classNames(classes.container, reciever && classes.reciever)}>
-    <p className={classes.name}>Kostis Podaras</p>
-    <Typography display="inline" variant="body2" className={classes.message}>
-      heysd sd asd asd asdasdwwdsdaw asdwd dw sd wawasdawdas sd wddwdsa
-    </Typography>
-    <Typography display="inline" className={classes.timestamp}>
-      3:31pm
-    </Typography>
-  </Grid>
+  <div className={reciever && classes.oppositeContainer}>
+    <Grid
+      className={classNames(classes.container, reciever && classes.reciever)}>
+      <p className={classNames(classes.name, reciever && classes.recieverName)}>
+        Kostis Podaras
+      </p>
+      <Typography display="inline" variant="body2" className={classes.message}>
+        heysd sd asd asd aawdas sd wddwdsasd sddddddd aw as da
+      </Typography>
+      <Typography display="inline" className={classes.timestamp}>
+        3:31pm
+      </Typography>
+    </Grid>
+  </div>
 );
 
 export default withStyles(styles)(Message);

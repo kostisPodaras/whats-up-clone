@@ -31,6 +31,12 @@ const styles = ({ palette }) => ({
     marginRight: 0,
     marginLeft: 'auto',
   },
+  recieverName: {
+    right: 20,
+  },
+  oppositeContainer: {
+    marginLeft: 35,
+  },
 });
 
 export default styles;
