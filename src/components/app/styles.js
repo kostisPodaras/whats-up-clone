@@ -1,5 +1,7 @@
 const styles = () => ({
-  container: {},
+  container: {
+    height: '100%',
+  },
 });
 
 export default styles;

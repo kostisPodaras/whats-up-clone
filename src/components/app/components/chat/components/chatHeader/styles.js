@@ -7,7 +7,7 @@ const styles = ({ palette, breakpoints }) => ({
 
     [breakpoints.up(480)]: {
       flexDirection: 'row',
-      height: '100%',
+      height: 68,
     },
   },
   infoContainer: {

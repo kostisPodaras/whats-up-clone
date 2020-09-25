@@ -40,7 +40,7 @@ const styles = ({ palette, breakpoints }) => ({
 
   wrapper: {
     backgroundColor: palette.common.white,
-    borderRadius: 5,
+    borderRadius: 10,
     display: 'flex',
     alignItems: 'center',
   },

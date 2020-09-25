@@ -15,7 +15,7 @@ const styles = ({ palette, app }) => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    // overflow: 'scroll',
+    overflow: 'hidden',
     height: '100%',
     // background: 'red',
   },
