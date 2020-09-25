@@ -7,6 +7,7 @@ const palette = {
   background: {
     main: '#DADBD3',
     lightGray: '#ededed',
+    green: '#dcf8c6',
   },
   borders: {
     dark: 'lightgray',

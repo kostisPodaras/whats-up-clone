@@ -26,6 +26,11 @@ const styles = ({ palette }) => ({
     marginLeft: 10,
     fontSize: 10,
   },
+  reciever: {
+    backgroundColor: palette.background.green,
+    marginRight: 0,
+    marginLeft: 'auto',
+  },
 });
 
 export default styles;
