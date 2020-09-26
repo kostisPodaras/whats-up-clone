@@ -10,9 +10,10 @@ import styles from './styles';
 type Props = {
   classes: Object,
   addNewChat: boolean,
+  roomName: string,
 };
 
-const ChatRoom = ({ classes, addNewChat }: Props) => (
+const ChatRoom = ({ classes, addNewChat, roomName }: Props) => (
   <>
     {!addNewChat ? (
       <Grid container className={classes.container}>
@@ -22,7 +23,7 @@ const ChatRoom = ({ classes, addNewChat }: Props) => (
           )}.svg`}
         />
         <div className={classes.info}>
-          <Typography variant="body1">Room Name </Typography>
+          <Typography variant="body1">{roomName}</Typography>
           <Typography variant="caption">Last message... </Typography>
         </div>
       </Grid>
