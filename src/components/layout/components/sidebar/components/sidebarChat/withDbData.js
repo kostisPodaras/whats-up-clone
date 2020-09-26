@@ -13,6 +13,8 @@ const withDbData = (Component) => (props) => {
         })),
       ),
     );
+
+    return () => unsubscribe();
   }, []);
 
   return <Component {...props} rooms={rooms} />;

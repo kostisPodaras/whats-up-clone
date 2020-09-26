@@ -9,6 +9,7 @@ type Props = {
 };
 
 const App = ({ classes }: Props) => {
+  console.log('App render');
   return (
     <div className={classes.container}>
       <Chat />
