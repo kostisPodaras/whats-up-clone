@@ -2,12 +2,15 @@ import { map, pluck } from 'rxjs/operators';
 import { ofType, combineEpics } from 'redux-observable';
 // import db from '../../firebase';
 
-import { getRooms, setRooms } from './actions';
+import { getRooms, setRooms, updateRooms } from './actions';
 
 const getRoomstEpic = (action$) =>
   action$.pipe(ofType(getRooms.type), pluck('payload'), map(setRooms));
 
-const roomsEpic = combineEpics(getRoomstEpic);
+const updateRoomsEpic = (action$) =>
+  action$.pipe(ofType(updateRooms.type), pluck('payload'), map(setRooms));
+
+const roomsEpic = combineEpics(getRoomstEpic, updateRoomsEpic);
 
 export default roomsEpic;
 

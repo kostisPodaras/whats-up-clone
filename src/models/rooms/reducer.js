@@ -5,7 +5,7 @@ const initialState = [];
 const roomsReducer = (state = initialState, action) => {
   switch (action.type) {
     case setRooms.type:
-      return action.payload;
+      return [...state, ...action.payload];
 
     default:
       return state;

@@ -10,7 +10,11 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+import compose from 'core/utils/compose';
+// import { updateRooms } from 'models/rooms';
+
 import { getRandomInt } from './utils';
+import withToggleValue from './withToggleValue';
 import styles from './styles';
 import db from '../../../../../../../firebase';
 
@@ -18,10 +22,12 @@ type Props = {
   classes: Object,
   addNewChat: boolean,
   roomName: string,
+  isOpen: boolean,
+
+  toggle: () => {},
 };
 
-const ChatRoom = ({ classes, addNewChat, roomName }: Props) => {
-  const [open, setOpen] = useState(false);
+const ChatRoom = ({ classes, addNewChat, roomName, isOpen, toggle }: Props) => {
   const [chatName, setChatName] = useState('');
 
   const createChat = () => {
@@ -30,14 +36,6 @@ const ChatRoom = ({ classes, addNewChat, roomName }: Props) => {
         name: chatName,
       });
     }
-  };
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
   };
 
   return (
@@ -56,30 +54,31 @@ const ChatRoom = ({ classes, addNewChat, roomName }: Props) => {
         </Grid>
       ) : (
         <div>
-          <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+          <Button variant="outlined" color="primary" onClick={toggle}>
             Add new chat
           </Button>
           <Dialog
-            open={open}
-            onClose={handleClose}
+            open={isOpen}
+            onClose={toggle}
             aria-labelledby="form-dialog-title">
             <DialogContent>
               <DialogContentText>Add new chat room</DialogContentText>
               <TextField
-                onChange={(e) => setChatName(e.target.value)}
+                onChange={(event) => setChatName(event.target.value)}
                 autoFocus
                 label="Chat Name"
                 type="text"
               />
             </DialogContent>
             <DialogActions>
-              <Button onClick={handleClose} color="primary">
+              <Button onClick={toggle} color="primary">
                 Cancel
               </Button>
               <Button
                 onClick={() => {
                   createChat();
-                  handleClose();
+                  // updateRooms();
+                  toggle();
                 }}
                 color="primary">
                 Add
@@ -92,4 +91,4 @@ const ChatRoom = ({ classes, addNewChat, roomName }: Props) => {
   );
 };
 
-export default withStyles(styles)(ChatRoom);
+export default compose(withToggleValue, withStyles(styles))(ChatRoom);
