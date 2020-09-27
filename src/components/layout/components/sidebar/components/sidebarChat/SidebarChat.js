@@ -19,9 +19,6 @@ type Props = {
 };
 
 const SidebarChat = ({ classes, rooms, getRooms }: Props) => {
-  // useEffect(() => {
-  //   getRooms(rooms);
-  // });
   return (
     <Grid className={classes.container}>
       <Scrollbars

@@ -13,21 +13,19 @@ type Props = {
   width: string,
 };
 
-const SidebarInput = ({ classes, width }: Props) => {
-  return (
-    <div className={classes.container}>
-      <div className={classes.wrapper}>
-        {width !== 'xs' && <SearchOutlinedIcon className={classes.icon} />}
-        <TextField
-          className={classes.textfield}
-          classes={{ root: classes.textfieldInput }}
-          label="Select or start new chat..."
-          fullWidth
-          InputProps={{ disableUnderline: true }}
-        />
-      </div>
+const SidebarInput = ({ classes, width }: Props) => (
+  <div className={classes.container}>
+    <div className={classes.wrapper}>
+      {width !== 'xs' && <SearchOutlinedIcon className={classes.icon} />}
+      <TextField
+        className={classes.textfield}
+        classes={{ root: classes.textfieldInput }}
+        label="Select or start new chat..."
+        fullWidth
+        InputProps={{ disableUnderline: true }}
+      />
     </div>
-  );
-};
+  </div>
+);
 
 export default compose(withWidth(), withStyles(styles))(SidebarInput);
