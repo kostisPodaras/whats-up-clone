@@ -1,3 +1,3 @@
-const counter = ({ counter }) => counter;
+const rooms = ({ rooms }) => rooms;
 
-export { counter };
+export { rooms };
