@@ -28,6 +28,7 @@ const SidebarChat = ({ classes, rooms, getRooms }: Props) => {
         autoHideTimeout={1000}
         autoHideDuration={200}>
         <button type="button" onClick={() => getRooms(rooms)}>
+          {/* <button type="button" onClick={getRooms}> */}
           click
         </button>
         <ChatRoom addNewChat />

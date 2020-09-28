@@ -11,6 +11,7 @@ import TextField from '@material-ui/core/TextField';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 import compose from 'core/utils/compose';
+// import { withModelProps } from 'core/components';
 // import { updateRooms } from 'models/rooms';
 
 import { getRandomInt } from './utils';
@@ -25,9 +26,17 @@ type Props = {
   isOpen: boolean,
 
   toggle: () => {},
+  // updateRooms: () => {},
 };
 
-const ChatRoom = ({ classes, addNewChat, roomName, isOpen, toggle }: Props) => {
+const ChatRoom = ({
+  classes,
+  addNewChat,
+  roomName,
+  isOpen,
+  toggle,
+}: // updateRooms,
+Props) => {
   const [chatName, setChatName] = useState('');
 
   const createChat = () => {
@@ -77,7 +86,12 @@ const ChatRoom = ({ classes, addNewChat, roomName, isOpen, toggle }: Props) => {
               <Button
                 onClick={() => {
                   createChat();
-                  // updateRooms();
+                  // updateRooms({
+                  //   id: 'test',
+                  //   data: {
+                  //     name: 'epic worked',
+                  //   },
+                  // });
                   toggle();
                 }}
                 color="primary">
@@ -91,4 +105,8 @@ const ChatRoom = ({ classes, addNewChat, roomName, isOpen, toggle }: Props) => {
   );
 };
 
-export default compose(withToggleValue, withStyles(styles))(ChatRoom);
+export default compose(
+  // withModelProps({ updateRooms }),
+  withToggleValue,
+  withStyles(styles),
+)(ChatRoom);
