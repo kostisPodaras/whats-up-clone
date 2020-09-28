@@ -23,6 +23,7 @@ module.exports = {
           store: './src/store',
           models: './src/models',
           core: './src/core',
+          src: './src',
         },
         extensions: ['js', 'css', 'json', 'svg', 'png', 'jpeg', 'jpg'],
       },

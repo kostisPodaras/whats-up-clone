@@ -14,10 +14,10 @@ import compose from 'core/utils/compose';
 // import { withModelProps } from 'core/components';
 // import { updateRooms } from 'models/rooms';
 
+import db from 'src/firebase';
 import { getRandomInt } from './utils';
 import withToggleValue from './withToggleValue';
 import styles from './styles';
-import db from '../../../../../../../firebase';
 
 type Props = {
   classes: Object,

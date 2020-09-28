@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import db from '../../../../../../firebase';
+import db from 'src/firebase';
 
 const withDbData = (Component) => (props) => {
   const [rooms, setRooms] = useState([]);
