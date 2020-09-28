@@ -1,6 +1,7 @@
 import { map, pluck } from 'rxjs/operators';
 import { ofType, combineEpics } from 'redux-observable';
-// import db from '../../firebase';
+
+// import db from 'src/firebase'
 
 import {
   getRooms,

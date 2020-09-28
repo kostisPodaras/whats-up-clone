@@ -11,10 +11,10 @@ import TextField from '@material-ui/core/TextField';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 import compose from 'core/utils/compose';
+import db from 'src/firebase';
 // import { withModelProps } from 'core/components';
 // import { updateRooms } from 'models/rooms';
 
-import db from 'src/firebase';
 import { getRandomInt } from './utils';
 import withToggleValue from './withToggleValue';
 import styles from './styles';
