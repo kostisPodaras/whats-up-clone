@@ -1,9 +1,9 @@
-import { Action } from 'core/utils';
+import { ActionCreator } from 'core/utils';
 
-const namespaceAction = Action('//counter');
+const namespacedActionCreator = ActionCreator('//counter');
 
-const getRooms = namespaceAction('getRooms');
-const setRooms = namespaceAction('setRooms');
-const updateRooms = namespaceAction('updateRooms');
+const getRooms = namespacedActionCreator('getRooms');
+const setRooms = namespacedActionCreator('setRooms');
+const updateRooms = namespacedActionCreator('updateRooms');
 
 export { getRooms, setRooms, updateRooms };
