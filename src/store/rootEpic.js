@@ -1,10 +1,7 @@
 import { combineEpics } from 'redux-observable';
 
-import { counterEpic } from 'models/counter';
+import { roomsEpic } from 'models/rooms';
 
-export const rootEpic = combineEpics(
-  counterEpic,
-  // the other epics i will add
-);
+const rootEpic = combineEpics(roomsEpic);
 
 export default rootEpic;

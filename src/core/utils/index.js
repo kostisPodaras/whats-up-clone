@@ -1,4 +1,4 @@
 import compose from './compose';
-import Action from './Action';
+import ActionCreator from './ActionCreator';
 
-export { compose, Action };
+export { compose, ActionCreator };
