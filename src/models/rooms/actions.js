@@ -1,6 +1,6 @@
 import { ActionCreator } from 'core/utils';
 
-const namespacedActionCreator = ActionCreator('//counter');
+const namespacedActionCreator = ActionCreator('//rooms');
 
 const getRooms = namespacedActionCreator('getRooms');
 const setRooms = namespacedActionCreator('setRooms');

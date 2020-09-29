@@ -12,8 +12,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 import compose from 'core/utils/compose';
 import db from 'src/firebase';
-// import { withModelProps } from 'core/components';
-// import { updateRooms } from 'models/rooms';
 
 import { getRandomInt } from './utils';
 import withToggleValue from './withToggleValue';
@@ -26,7 +24,6 @@ type Props = {
   isOpen: boolean,
 
   toggle: () => {},
-  // updateRooms: () => {},
 };
 
 const ChatRoom = ({
@@ -86,12 +83,6 @@ Props) => {
               <Button
                 onClick={() => {
                   createChat();
-                  // updateRooms({
-                  //   id: 'test',
-                  //   data: {
-                  //     name: 'epic worked',
-                  //   },
-                  // });
                   toggle();
                 }}
                 color="primary">
@@ -105,8 +96,4 @@ Props) => {
   );
 };
 
-export default compose(
-  // withModelProps({ updateRooms }),
-  withToggleValue,
-  withStyles(styles),
-)(ChatRoom);
+export default compose(withToggleValue, withStyles(styles))(ChatRoom);
