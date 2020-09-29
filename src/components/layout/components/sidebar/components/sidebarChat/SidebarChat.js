@@ -18,27 +18,24 @@ type Props = {
   getRooms: () => {},
 };
 
-const SidebarChat = ({ classes, rooms, getRooms }: Props) => {
-  return (
-    <Grid className={classes.container}>
-      <Scrollbars
-        universal
-        autoHeightMax="100vh"
-        autoHide
-        autoHideTimeout={1000}
-        autoHideDuration={200}>
-        <button type="button" onClick={() => getRooms(rooms)}>
-          {/* <button type="button" onClick={getRooms}> */}
-          click
-        </button>
-        <ChatRoom addNewChat />
-        {rooms.map((room) => (
-          <ChatRoom key={room.id} roomName={room.data.name} />
-        ))}
-      </Scrollbars>
-    </Grid>
-  );
-};
+const SidebarChat = ({ classes, rooms, getRooms }: Props) => (
+  <Grid className={classes.container}>
+    <Scrollbars
+      universal
+      autoHeightMax="100vh"
+      autoHide
+      autoHideTimeout={1000}
+      autoHideDuration={200}>
+      <button type="button" onClick={() => getRooms(rooms)}>
+        click
+      </button>
+      <ChatRoom addNewChat />
+      {rooms.map((room) => (
+        <ChatRoom key={room.id} roomName={room.data.name} />
+      ))}
+    </Scrollbars>
+  </Grid>
+);
 
 export default compose(
   withDbData,
